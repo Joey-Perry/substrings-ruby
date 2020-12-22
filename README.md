@@ -4,11 +4,19 @@ then an array of valid substrings (your dictionary) as the second argument. It s
 </br>
 <code>
 > dictionary = ["below","down","go","going","horn","how","howdy","it","i","low","own","part","partner","sit"]
-<br>
+</br>
   => ["below","down","go","going","horn","how","howdy","it","i","low","own","part","partner","sit"]
-  <br>
+  </br>
   > substrings("below", dictionary)
   </br>
   => { "below" => 1, "low" => 1 }
   </code>
 
+
+Next, make sure your method can handle multiple words:
+</br>
+<code>
+  > substrings("Howdy partner, sit down! How's it going?", dictionary)
+  </br>
+  => { "down" => 1, "go" => 1, "going" => 1, "how" => 2, "howdy" => 
+  </code>
